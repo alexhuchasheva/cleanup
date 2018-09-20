@@ -1,0 +1,242 @@
+//Переменные
+$blue:#0f93ff;
+$darkblue: #000b21;
+
+//Общие стили
+
+body {
+    background: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+
+    a {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+//Стили разделов
+.header {
+    background: $blue;
+
+    .menu-item {
+        display: inline;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .page-header {
+        padding: 20px 0 10px 0;
+        margin: 0;
+
+        .row {
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            padding: 30px;
+            font-size: 22px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+.header-img {
+    width: 100%;
+    height: 760px;
+    background: #0f93ff url(http://localhost/cleanup/wp-content/uploads/2018/09/header.png);
+        background-size: cover;
+    background-position: bottom;
+
+    h3 {
+        text-align: center;
+        padding-top: 6rem;
+        font-weight: 100;
+        font-size: 31px;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        margin-bottom: 4rem;
+    }
+
+    h4 {
+        color: white;
+        text-align: center;
+        border: 3px solid #0f93ff;
+        padding: 17px;
+        font-size: 24px;
+        margin: 0px auto;
+        width: 329px;
+
+        &:hover {
+            background: $blue;
+            color: white;
+            transition: 1s;
+        }
+    }
+}
+
+//преимущества
+.features {
+    background: $blue;
+    padding: 10px;
+    text-align: center;
+    margin-top: -40px;
+
+    p {
+        color: white;
+        font-size: 20px;
+        padding: 25px 0 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: white;
+        padding: 15px 0 20px 0;
+        border-bottom: 1px solid white;
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    img {
+        width: 45px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+}
+
+//виды уборки
+.cleaning-path {
+    min-height: 500px;
+    margin: 0px auto;
+    h2{
+        color:$blue;
+        font-weight: 100;
+        margin: 60px 0 0 0;
+        text-align: center;
+    }
+
+    .cleaning-first,
+    .cleaning-bottom,
+    .cleaning-third {
+        max-width: 250px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        /* Internet Explorer */
+        -o-transform: rotate(-45deg);
+        margin: 120px 0;
+        position: absolute;
+    }
+
+    .cleaning-bottom {
+        margin: 337px 51px;
+        transition: 1s;
+
+        &:hover {
+            margin-top: 369px;
+            transition: 1s;
+        }
+    }
+
+    .cleaning-first {
+        margin: 160px 253px;
+        transition: 1s;
+
+        &:hover {
+            margin: 145px 235px;
+            transition: 1s;
+        }
+    }
+
+    .cleaning-third {
+        margin: 160px -151px;
+        transition: 1s;
+
+        &:hover {
+            margin: 145px -130px;
+            transition: 1s;
+        }
+    }
+}
+
+//faq
+
+.faq {
+    background: $blue;
+    margin: 350px 0 200px 0;
+    transform: skewY(-3deg);
+    padding: 100px 0;
+
+    .text {
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        color:white;
+
+        h2 {
+            font-family: 'Bad Script', cursive;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Bad Script', cursive;
+            margin-bottom: 20px;
+
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//футер
+
+.footer {
+    h3 {
+        font-size: 18px;
+    }
+}
+
+.copyright {
+    background: $blue;
+    color: white;
+    padding: 0;
+
+    p {
+        padding: 10px 0;
+    }
+}
