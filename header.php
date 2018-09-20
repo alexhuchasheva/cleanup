@@ -6,7 +6,6 @@
         <meta name="keywords" content="ключевые слова">
         <link href="https://fonts.googleapis.com/css?family=Bad+Script|Roboto+Condensed:400,700|Montserrat:200,400&amp;subset=cyrillic" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-        <script src="/js/calculator.js"></script>
         <title>CleanUp - профессиональная уборка квартир в Санкт-Петербурге</title>
         <?php wp_head(); ?>
     </head>

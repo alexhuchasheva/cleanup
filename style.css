@@ -90,6 +90,10 @@ a {
   width: 329px;
 }
 
+.header-img h4 a {
+  padding: 0 !important;
+}
+
 .header-img h4:hover {
   background: #0f93ff;
   color: white;
@@ -195,9 +199,15 @@ a {
 }
 
 .faq .text {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
   color: white;
+}
+
+.faq .text img {
+  display: inline;
+  margin-right: 20px;
+  margin-top: -5px;
 }
 
 .faq .text h2 {
@@ -208,10 +218,85 @@ a {
 .faq .text h3 {
   font-family: 'Bad Script', cursive;
   margin-bottom: 20px;
+  display: inline;
 }
 
 .faq .text p {
   font-size: 20px;
+}
+
+.about-us h2 {
+  color: #0f93ff;
+  font-size: 40px;
+  text-align: right;
+  margin: -50px 0 90px;
+}
+
+.about-us p {
+  font-size: 22px;
+  color: #0f93ff;
+  padding: 20px;
+}
+
+.about-us h3 {
+  color: #0f93ff;
+  padding: 20px;
+}
+
+.callme {
+  background: #0f93ff;
+  padding: 0;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.callme h2 {
+  color: white;
+  padding: 10px 0 20px;
+}
+
+.callme h2 a {
+  color: white;
+}
+
+.callme h2 a:hover {
+  text-decoration: none;
+}
+
+.contacts {
+  background: #0f93ff url(http://localhost/cleanup/wp-content/uploads/2018/09/background-bottom.jpg);
+  background-attachment: fixed;
+  padding-bottom: 50px;
+}
+
+.contacts h2 {
+  color: #0f93ff;
+  font-size: 30px;
+  margin: 50px 0 50px;
+  text-align: center;
+}
+
+.contacts input,
+.contacts textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #0f93ff;
+}
+
+.contacts label {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #0f93ff;
+  font-size: 20px;
+  width: 100%;
+}
+
+.contacts .contactmessage {
+  width: 100%;
+}
+
+.footer {
+  padding: 50px 0 50px 0;
 }
 
 .footer h3 {

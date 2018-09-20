@@ -94,6 +94,10 @@ a {
         margin: 0px auto;
         width: 329px;
 
+        a{
+            padding: 0 !important;
+        }
+
         &:hover {
             background: $blue;
             color: white;
@@ -196,9 +200,13 @@ a {
     padding: 100px 0;
 
     .text {
-        -webkit-transform: rotate(3deg);
-        -moz-transform: rotate(3deg);
+        transform: skewY(3deg);
         color:white;
+        img{
+            display: inline;
+            margin-right: 20px;
+            margin-top: -5px;
+        }
 
         h2 {
             font-family: 'Bad Script', cursive;
@@ -208,7 +216,7 @@ a {
         h3 {
             font-family: 'Bad Script', cursive;
             margin-bottom: 20px;
-
+            display: inline;
         }
         p{
             font-size: 20px;
@@ -216,16 +224,80 @@ a {
     }
 }
 
+//о нас
 
+.about-us{
+    h2{
+        color:$blue;
+        font-size: 40px;
+        text-align: right;
+        margin: -50px 0 90px;
+    }
+    p{
+        font-size: 22px;
+    color: $blue;
+    padding: 20px;
+    }
+    h3{
+        color:$blue;
+        padding: 20px;
+    }
+}
 
+//позвони мне, позвони :)
 
+.callme{
+    background: $blue;
+    padding: 0;
+    margin-top: 90px;
+    text-align: center;
+    h2{
+        color:white;
+        padding: 10px 0 20px;
+        a{
+            color:white;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
 
+//или напиши мне, напиши
 
-
+.contacts{
+    background: $blue url(http://localhost/cleanup/wp-content/uploads/2018/09/background-bottom.jpg);
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    h2{
+        color:$blue;
+        font-size: 30px;
+        margin: 50px 0 50px;
+        text-align: center;
+    }
+    input,
+    textarea
+    {
+        background: none;
+        border: none;
+        border-bottom: 2px solid $blue;
+    }
+    label {
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: $blue;
+        font-size: 20px;
+        width: 100%;
+    }
+    .contactmessage{
+        width: 100%;
+    }
+}
 
 //футер
 
 .footer {
+    padding: 50px 0 50px 0;
     h3 {
         font-size: 18px;
     }
