@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <div class="header-img">
-    <h3>Нет времени на уборку квартиры?</h3>
+    <h3><?php bloginfo('description'); ?></h3>
 
-    <h1>Доверьте порядок CleanUp!</h1>
+    <h1><?php bloginfo('name'); ?></h1>
 
     <h4><a href="#cleaning">Рассчитать стоимость</a></h4>
 </div>
@@ -46,11 +46,10 @@
 
 <div id ="cleaning" class="container cleaning-path">
     <h2>Чистота Вашей квартиры - наша забота</h2>
-    <div class="col-sm-4"> <a href="<?php echo home_url(''); ?>/podderzhivajushhaja-uborka/"><img class="cleaning-first" src="http://localhost/cleanup/wp-content/uploads/2018/09/uborka-1.jpg" alt="Поддерживающая уборка"></a></div>
-    <div class="col-sm-4"><a href="<?php echo home_url(''); ?>/generalnaja-uborka/"><img class="cleaning-bottom" src="http://localhost/cleanup/wp-content/uploads/2018/09/uborka-3.jpg" alt="Генеральная уборка"></a></div>
-    <div class="col-sm-4"><a href="<?php echo home_url(''); ?>/uborka-posle-remonta/"><img class="cleaning-third" src="http://localhost/cleanup/wp-content/uploads/2018/09/uborka-2.jpg" alt="Уборка после ремонта"></a></div>
+    <div class="col-sm-12 col-md-4"> <a href="<?php echo home_url(''); ?>/podderzhivajushhaja-uborka/"><img class="cleaning-first" src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/uborka-1.jpg" alt="Поддерживающая уборка"></a></div>
+    <div class="col-sm-12 col-md-4"><a href="<?php echo home_url(''); ?>/generalnaja-uborka/"><img class="cleaning-bottom" src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/uborka-3.jpg" alt="Генеральная уборка"></a></div>
+    <div class="col-sm-12 col-md-4"><a href="<?php echo home_url(''); ?>/uborka-posle-remonta/"><img class="cleaning-third" src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/uborka-2.jpg" alt="Уборка после ремонта"></a></div>
 </div>
-
 <!-- ЧАВО -->
 
 <div id="faq" class="container-fluid faq">
@@ -91,7 +90,7 @@
     </div>
     <div class="col-sm-4">
 <h3>Гарантия качества:</h3>
-<p>Если у вас изменились обстоятельства, и по каким-то причинам вы не можете предоставить помещение для уборки - свяжитесь с нашим специалистом и поставьте его в известность. Менеджер перенесёт оказание услуг на любую для вас удобную дату.</p>
+<p>В первую очередь наши сотрудники проходят проверку на кристальную чистоту службой безопасности. Мы гарантируем, что во время пребывания в вашем доме ничего не пропадёт.</p>
     </div>
 </div>
 </div>

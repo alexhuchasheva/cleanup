@@ -1,6 +1,10 @@
 //Переменные
 $blue:#0f93ff;
 $darkblue: #000b21;
+$breakpoint-ex-large:1200px;
+$breakpoint-large:992px;
+$breakpoint-mid:768px;
+$breakpoint-sm:576px;
 
 //Общие стили
 
@@ -33,12 +37,16 @@ a {
 .header {
     background: $blue;
 
-    .menu-item {
-        display: inline;
-    }
+    .main-menu {
+        margin-top: 10px;
 
-    li {
-        list-style: none;
+        .menu-item {
+            display: inline;
+        }
+
+        li {
+            list-style: none;
+        }
     }
 
     .page-header {
@@ -51,12 +59,21 @@ a {
 
         a {
             color: white;
-            padding: 30px;
+            padding: 30px 20px;
             font-size: 22px;
+
+            @media (max-width: $breakpoint-large) {
+                padding: 30px 10px;
+                font-size: 18px;
+            }
 
             &:hover {
                 text-decoration: none;
             }
+        }
+
+        .logo {
+            height: 50px;
         }
     }
 }
@@ -67,7 +84,7 @@ a {
     width: 100%;
     height: 760px;
     background: #0f93ff url(http://localhost/cleanup/wp-content/uploads/2018/09/header.png);
-        background-size: cover;
+    background-size: cover;
     background-position: bottom;
 
     h3 {
@@ -76,6 +93,10 @@ a {
         font-weight: 100;
         font-size: 31px;
         color: white;
+
+        @media (max-width: $breakpoint-sm) {
+            padding: 10px;
+        }
     }
 
     h1 {
@@ -94,7 +115,7 @@ a {
         margin: 0px auto;
         width: 329px;
 
-        a{
+        a {
             padding: 0 !important;
         }
 
@@ -112,6 +133,7 @@ a {
     padding: 10px;
     text-align: center;
     margin-top: -40px;
+    overflow: hidden;
 
     p {
         color: white;
@@ -136,12 +158,18 @@ a {
 
 }
 
+
 //виды уборки
+
 .cleaning-path {
     min-height: 500px;
     margin: 0px auto;
-    h2{
-        color:$blue;
+    @media (max-width: $breakpoint-large) {
+    overflow: hidden;
+    }
+
+    h2 {
+        color: $blue;
         font-weight: 100;
         margin: 60px 0 0 0;
         text-align: center;
@@ -158,6 +186,15 @@ a {
         -o-transform: rotate(-45deg);
         margin: 120px 0;
         position: absolute;
+
+        @media (max-width: $breakpoint-large) {
+            margin: 160px 187px;
+            position: inherit;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            max-width: 100%;
+        }
     }
 
     .cleaning-bottom {
@@ -167,6 +204,34 @@ a {
         &:hover {
             margin-top: 369px;
             transition: 1s;
+
+            @media (max-width: $breakpoint-large) {
+                margin: 0 187px;
+            }
+
+            @media (max-width: $breakpoint-sm) {
+                max-width: 100%;
+                margin: 0;
+                padding: 65px;
+            }
+
+            @media (max-width: 300px) {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: $breakpoint-large) {
+            margin: 0 187px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            max-width: 100%;
+            margin: 0;
+            padding: 65px;
+        }
+
+        @media (max-width: 300px) {
+            padding: 20px;
         }
     }
 
@@ -174,9 +239,45 @@ a {
         margin: 160px 253px;
         transition: 1s;
 
+        @media (max-width: $breakpoint-ex-large) {
+            margin: 160px 187px;
+        }
+
+        @media (max-width: $breakpoint-large) {
+            margin: 160px 187px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            max-width: 100%;
+            margin: 20px 0 0 0;
+            padding: 65px;
+        }
+
+        @media (max-width: 300px) {
+            padding: 20px;
+        }
+
         &:hover {
             margin: 145px 235px;
             transition: 1s;
+
+            @media (max-width: $breakpoint-ex-large) {
+                margin: 160px 164px;
+            }
+
+            @media (max-width: $breakpoint-large) {
+                margin: 160px 187px;
+            }
+
+            @media (max-width: $breakpoint-sm) {
+                max-width: 100%;
+                margin: 20px 0 0 0;
+                padding: 65px;
+            }
+
+            @media (max-width: 300px) {
+                padding: 20px;
+            }
         }
     }
 
@@ -187,6 +288,43 @@ a {
         &:hover {
             margin: 145px -130px;
             transition: 1s;
+
+            @media (max-width: $breakpoint-ex-large) {
+                margin: 160px -60px;
+            }
+
+            @media (max-width: $breakpoint-large) {
+                margin: 160px 187px;
+            }
+
+            @media (max-width: $breakpoint-sm) {
+                max-width: 100%;
+                margin: 0 0 50px 0;
+                ;
+                padding: 65px;
+            }
+
+            @media (max-width: 300px) {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: $breakpoint-ex-large) {
+            margin: 160px -85px;
+        }
+
+        @media (max-width: $breakpoint-large) {
+            margin: 160px 187px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            max-width: 100%;
+            margin: 0 0 50px 0;
+            padding: 65px;
+        }
+
+        @media (max-width: 300px) {
+            padding: 20px;
         }
     }
 }
@@ -199,10 +337,15 @@ a {
     transform: skewY(-3deg);
     padding: 100px 0;
 
+    @media (max-width: $breakpoint-large) {
+        margin: 0 0 100px 0;
+    }
+
     .text {
         transform: skewY(3deg);
-        color:white;
-        img{
+        color: white;
+
+        img {
             display: inline;
             margin-right: 20px;
             margin-top: -5px;
@@ -211,6 +354,10 @@ a {
         h2 {
             font-family: 'Bad Script', cursive;
             text-align: center;
+
+            @media (max-width: $breakpoint-sm) {
+                margin: -20px 0 55px;
+            }
         }
 
         h3 {
@@ -218,45 +365,78 @@ a {
             margin-bottom: 20px;
             display: inline;
         }
-        p{
+
+        p {
             font-size: 20px;
+
+            @media (max-width: $breakpoint-sm) {
+                font-size: 18px;
+                margin: 30px 0;
+            }
         }
     }
 }
 
 //о нас
 
-.about-us{
-    h2{
-        color:$blue;
+.about-us {
+    h2 {
+        color: $blue;
         font-size: 40px;
         text-align: right;
         margin: -50px 0 90px;
     }
-    p{
+
+    p {
         font-size: 22px;
-    color: $blue;
-    padding: 20px;
-    }
-    h3{
-        color:$blue;
+        color: $blue;
         padding: 20px;
+
+        @media (max-width: $breakpoint-large) {
+            padding: 0;
+            ;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 18px;
+        }
+    }
+
+    h3 {
+        color: $blue;
+        padding: 20px;
+
+        @media (max-width: $breakpoint-large) {
+            padding: 0;
+            ;
+        }
+    }
+
+    img {
+        width: 100%;
+
+        @media (max-width: $breakpoint-mid) {
+            display: none;
+        }
     }
 }
 
 //позвони мне, позвони :)
 
-.callme{
+.callme {
     background: $blue;
     padding: 0;
     margin-top: 90px;
     text-align: center;
-    h2{
-        color:white;
+
+    h2 {
+        color: white;
         padding: 10px 0 20px;
-        a{
-            color:white;
-            &:hover{
+
+        a {
+            color: white;
+
+            &:hover {
                 text-decoration: none;
             }
         }
@@ -265,23 +445,25 @@ a {
 
 //или напиши мне, напиши
 
-.contacts{
+.contacts {
     background: $blue url(http://localhost/cleanup/wp-content/uploads/2018/09/background-bottom.jpg);
     background-attachment: fixed;
     padding-bottom: 50px;
-    h2{
-        color:$blue;
+
+    h2 {
+        color: $blue;
         font-size: 30px;
         margin: 50px 0 50px;
         text-align: center;
     }
+
     input,
-    textarea
-    {
+    textarea {
         background: none;
         border: none;
         border-bottom: 2px solid $blue;
     }
+
     label {
         margin-bottom: 20px;
         font-weight: 500;
@@ -289,7 +471,8 @@ a {
         font-size: 20px;
         width: 100%;
     }
-    .contactmessage{
+
+    .contactmessage {
         width: 100%;
     }
 }
@@ -298,6 +481,7 @@ a {
 
 .footer {
     padding: 50px 0 50px 0;
+
     h3 {
         font-size: 18px;
     }
@@ -310,5 +494,58 @@ a {
 
     p {
         padding: 10px 0;
+    }
+}
+
+//страницы с калькуляторами
+
+.page-content {
+    padding: 30px 0 50px;
+    font-size: 20px;
+    @media (max-width: $breakpoint-large) {
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    h2 {
+        color: $blue;
+    }
+}
+
+//калькулятор
+
+.calculator {
+    background: $blue url(http://localhost/cleanup/wp-content/uploads/2018/09/background-bottom.jpg);
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    h2 {
+        color: $blue;
+    }
+
+    h3 {
+        color: $blue;
+    }
+
+    .form-control {
+        background: none;
+        border: none;
+        border-bottom: 2px solid $blue;
+    }
+
+    #app {
+        background: #ffffff9c;
+        padding: 30px;
+    }
+
+    .rooms-price {
+        font-style: italic;
+        color: #0f93ff;
+    }
+
+    .text-muted {
+        color: $blue;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
     }
 }

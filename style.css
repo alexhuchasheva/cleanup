@@ -30,11 +30,15 @@ a {
   background: #0f93ff;
 }
 
-.header .menu-item {
+.header .main-menu {
+  margin-top: 10px;
+}
+
+.header .main-menu .menu-item {
   display: inline;
 }
 
-.header li {
+.header .main-menu li {
   list-style: none;
 }
 
@@ -49,12 +53,23 @@ a {
 
 .header .page-header a {
   color: white;
-  padding: 30px;
+  padding: 30px 20px;
   font-size: 22px;
+}
+
+@media (max-width: 992px) {
+  .header .page-header a {
+    padding: 30px 10px;
+    font-size: 18px;
+  }
 }
 
 .header .page-header a:hover {
   text-decoration: none;
+}
+
+.header .page-header .logo {
+  height: 50px;
 }
 
 .header-img {
@@ -71,6 +86,12 @@ a {
   font-weight: 100;
   font-size: 31px;
   color: white;
+}
+
+@media (max-width: 576px) {
+  .header-img h3 {
+    padding: 10px;
+  }
 }
 
 .header-img h1 {
@@ -106,6 +127,7 @@ a {
   padding: 10px;
   text-align: center;
   margin-top: -40px;
+  overflow: hidden;
 }
 
 .features p {
@@ -134,6 +156,12 @@ a {
   margin: 0px auto;
 }
 
+@media (max-width: 992px) {
+  .cleaning-path {
+    overflow: hidden;
+  }
+}
+
 .cleaning-path h2 {
   color: #0f93ff;
   font-weight: 100;
@@ -154,6 +182,23 @@ a {
   position: absolute;
 }
 
+@media (max-width: 992px) {
+  .cleaning-path .cleaning-first,
+  .cleaning-path .cleaning-bottom,
+  .cleaning-path .cleaning-third {
+    margin: 160px 187px;
+    position: inherit;
+  }
+}
+
+@media (max-width: 576px) {
+  .cleaning-path .cleaning-first,
+  .cleaning-path .cleaning-bottom,
+  .cleaning-path .cleaning-third {
+    max-width: 100%;
+  }
+}
+
 .cleaning-path .cleaning-bottom {
   margin: 337px 51px;
   -webkit-transition: 1s;
@@ -166,16 +211,108 @@ a {
   transition: 1s;
 }
 
+@media (max-width: 992px) {
+  .cleaning-path .cleaning-bottom:hover {
+    margin: 0 187px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cleaning-path .cleaning-bottom:hover {
+    max-width: 100%;
+    margin: 0;
+    padding: 65px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cleaning-path .cleaning-bottom:hover {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cleaning-path .cleaning-bottom {
+    margin: 0 187px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cleaning-path .cleaning-bottom {
+    max-width: 100%;
+    margin: 0;
+    padding: 65px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cleaning-path .cleaning-bottom {
+    padding: 20px;
+  }
+}
+
 .cleaning-path .cleaning-first {
   margin: 160px 253px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
+@media (max-width: 1200px) {
+  .cleaning-path .cleaning-first {
+    margin: 160px 187px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cleaning-path .cleaning-first {
+    margin: 160px 187px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cleaning-path .cleaning-first {
+    max-width: 100%;
+    margin: 20px 0 0 0;
+    padding: 65px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cleaning-path .cleaning-first {
+    padding: 20px;
+  }
+}
+
 .cleaning-path .cleaning-first:hover {
   margin: 145px 235px;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media (max-width: 1200px) {
+  .cleaning-path .cleaning-first:hover {
+    margin: 160px 164px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cleaning-path .cleaning-first:hover {
+    margin: 160px 187px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cleaning-path .cleaning-first:hover {
+    max-width: 100%;
+    margin: 20px 0 0 0;
+    padding: 65px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cleaning-path .cleaning-first:hover {
+    padding: 20px;
+  }
 }
 
 .cleaning-path .cleaning-third {
@@ -190,12 +327,70 @@ a {
   transition: 1s;
 }
 
+@media (max-width: 1200px) {
+  .cleaning-path .cleaning-third:hover {
+    margin: 160px -60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cleaning-path .cleaning-third:hover {
+    margin: 160px 187px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cleaning-path .cleaning-third:hover {
+    max-width: 100%;
+    margin: 0 0 50px 0;
+    padding: 65px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cleaning-path .cleaning-third:hover {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cleaning-path .cleaning-third {
+    margin: 160px -85px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cleaning-path .cleaning-third {
+    margin: 160px 187px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cleaning-path .cleaning-third {
+    max-width: 100%;
+    margin: 0 0 50px 0;
+    padding: 65px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cleaning-path .cleaning-third {
+    padding: 20px;
+  }
+}
+
 .faq {
   background: #0f93ff;
   margin: 350px 0 200px 0;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   padding: 100px 0;
+}
+
+@media (max-width: 992px) {
+  .faq {
+    margin: 0 0 100px 0;
+  }
 }
 
 .faq .text {
@@ -215,6 +410,12 @@ a {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .faq .text h2 {
+    margin: -20px 0 55px;
+  }
+}
+
 .faq .text h3 {
   font-family: 'Bad Script', cursive;
   margin-bottom: 20px;
@@ -223,6 +424,13 @@ a {
 
 .faq .text p {
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .faq .text p {
+    font-size: 18px;
+    margin: 30px 0;
+  }
 }
 
 .about-us h2 {
@@ -238,9 +446,37 @@ a {
   padding: 20px;
 }
 
+@media (max-width: 992px) {
+  .about-us p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us p {
+    font-size: 18px;
+  }
+}
+
 .about-us h3 {
   color: #0f93ff;
   padding: 20px;
+}
+
+@media (max-width: 992px) {
+  .about-us h3 {
+    padding: 0;
+  }
+}
+
+.about-us img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-us img {
+    display: none;
+  }
 }
 
 .callme {
@@ -311,5 +547,57 @@ a {
 
 .copyright p {
   padding: 10px 0;
+}
+
+.page-content {
+  padding: 30px 0 50px;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .page-content {
+    font-size: 18px;
+    padding: 30px;
+  }
+}
+
+.page-content h2 {
+  color: #0f93ff;
+}
+
+.calculator {
+  background: #0f93ff url(http://localhost/cleanup/wp-content/uploads/2018/09/background-bottom.jpg);
+  background-attachment: fixed;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.calculator h2 {
+  color: #0f93ff;
+}
+
+.calculator h3 {
+  color: #0f93ff;
+}
+
+.calculator .form-control {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #0f93ff;
+}
+
+.calculator #app {
+  background: #ffffff9c;
+  padding: 30px;
+}
+
+.calculator .rooms-price {
+  font-style: italic;
+  color: #0f93ff;
+}
+
+.calculator .text-muted {
+  color: #0f93ff;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

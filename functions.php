@@ -15,6 +15,35 @@ add_action('after_setup_theme', function() {
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
 
+    //виджеты
+    register_sidebar( array(
+        'name' => __( 'Описание в футере', '' ),
+        'id' => 'footer-description',
+        'description' => __( 'Добавлять надпись только в заголовок для сохранения правильного шрифта', '' ),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Контакты в футере', '' ),
+        'id' => 'footer-contacts',
+        'description' => __( 'Контакты в футере', '' ),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Часы работы в футере', '' ),
+        'id' => 'footer-hours',
+        'description' => __( 'Часы работы', '' ),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ) );
+
 
 });
 
