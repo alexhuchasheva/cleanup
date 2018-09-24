@@ -50,6 +50,7 @@
     <div class="col-sm-12 col-md-4"><a href="<?php echo home_url(''); ?>/generalnaja-uborka/"><img class="cleaning-bottom" src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/uborka-3.jpg" alt="Генеральная уборка"></a></div>
     <div class="col-sm-12 col-md-4"><a href="<?php echo home_url(''); ?>/uborka-posle-remonta/"><img class="cleaning-third" src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/uborka-2.jpg" alt="Уборка после ремонта"></a></div>
 </div>
+
 <!-- ЧАВО -->
 
 <div id="faq" class="container-fluid faq">
@@ -72,9 +73,9 @@
 <div id="about-us" class="container about-us">
     <h2>О нас</h2>
 <div class="row">
-    <div class="col-sm-5"><img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/blue-flowers-creative-ideas1-2.jpg" alt="flower"></div>
+    <div class="col-sm-5"><img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/logo-blue.png" alt="flower"></div>
     <div class="col-sm-7">
-<p>СleanUp - это услуги по профессиональной уборке квартир в Санкт-Петербурге. Только благодаря накопленному опыту, современному оборудованию, эффективным и экологичным средствам уборка квартиры может быть профессиональной.</p>
+<p>Don't Worry - это услуги по профессиональной уборке квартир в Санкт-Петербурге. Только благодаря накопленному опыту, современному оборудованию, эффективным и экологичным средствам уборка квартиры может быть профессиональной.</p>
 <p>Компания существует только благодаря нашим клиентам. Поэтому мы непрерывно стремимся к совершенству и вносим изменения в нашу деятельность. Наша цель – поддерживать имидж уникальной и оригинальной компании на рынке и предлагать непревзойденные решения с учетом потребностей клиентов. </p>
 <p>Мы тщательно изучаем Ваши потребности и оперативно реагируем на Ваши нужды. Мы развиваемся вместе с Вами, для Вас. Именно ради Вас мы создаем новые услуги, совершенствуем наши технологии, процессы и повышаем уровень сервиса.</p>
 

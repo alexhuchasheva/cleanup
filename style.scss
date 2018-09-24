@@ -50,7 +50,7 @@ a {
     }
 
     .page-header {
-        padding: 20px 0 10px 0;
+        padding: 20px 0 20px 0;
         margin: 0;
 
         .row {
@@ -82,7 +82,7 @@ a {
 
 .header-img {
     width: 100%;
-    height: 760px;
+    height: 733px;
     background: #0f93ff url(http://localhost/cleanup/wp-content/uploads/2018/09/header.png);
     background-size: cover;
     background-position: bottom;
@@ -132,7 +132,7 @@ a {
     background: $blue;
     padding: 10px;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -70px;
     overflow: hidden;
 
     p {
@@ -389,7 +389,7 @@ a {
 
     p {
         font-size: 22px;
-        color: $blue;
+        color: black;
         padding: 20px;
 
         @media (max-width: $breakpoint-large) {
@@ -414,6 +414,7 @@ a {
 
     img {
         width: 100%;
+        margin-top: 20%;
 
         @media (max-width: $breakpoint-mid) {
             display: none;
@@ -474,6 +475,12 @@ a {
 
     .contactmessage {
         width: 100%;
+    }
+    .wpcf7-submit{
+        background: #0f93ff;
+        color: white;
+        padding: 13px 40px;
+        font-size: 22px;
     }
 }
 

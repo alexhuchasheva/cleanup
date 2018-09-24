@@ -18,11 +18,13 @@
             <div class="container-fluid page-header">
 
                 <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-6">                
+                    <div class="col-lg-2 col-md-2 col-sm-6">                
                     <a href="<?php echo home_url(''); ?>"><img class="logo" src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/logo.png" alt="logo"></a>
-                    <a href="tel:88129885591"> 8 (812) 988-55-91</a>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-sm-6 text-right">
+                    <div class="col-lg-7 col-md-6 text-right">
                         <?php wp_nav_menu(['theme_location' => 'primary', 'menu_class' => 'main-menu']); ?>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 text-right" style="margin-top:10px;">
+                    <a href="tel:88129885591"> 8 (812) 988-55-91</a>
                     </div>
                 </div>
