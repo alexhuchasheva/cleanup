@@ -573,6 +573,26 @@ a {
   color: #0f93ff;
 }
 
+.table-features {
+  display: none;
+}
+
+.table-features h3 {
+  color: #0f93ff;
+}
+
+@media (max-width: 768px) {
+  .table-features {
+    display: table;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    display: none;
+  }
+}
+
 .calculator {
   background: #0f93ff url(http://localhost/cleanup/wp-content/uploads/2018/09/background-bottom.jpg);
   background-attachment: fixed;
