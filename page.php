@@ -14,7 +14,6 @@
 <!-- Баннер -->
 
 <div class="container features">
-    <h2>Почему мы?</h2>
     <div class="row">
         <div class="col-sm-3">
             <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/feature-clock.png" alt="clock">
@@ -56,14 +55,16 @@
 <div id="faq" class="container-fluid faq">
     <div class="container text">
         <h2>Часто задаваемые вопросы</h2>
-        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>Lorem, ipsum dolor sit amet?</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere recusandae harum architecto provident quidem distinctio, odio sint exercitationem, nisi tempora qui. Aut asperiores voluptatibus repudiandae dolore quae, culpa nostrum?</p>
-        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>Lorem, ipsum dolor sit amet?</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere recusandae harum architecto provident quidem distinctio, odio sint exercitationem, nisi tempora qui. Aut asperiores voluptatibus repudiandae dolore quae, culpa nostrum?</p>
-        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>Lorem, ipsum dolor sit amet?</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere recusandae harum architecto provident quidem distinctio, odio sint exercitationem, nisi tempora qui. Aut asperiores voluptatibus repudiandae dolore quae, culpa nostrum?</p>
-        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>Lorem, ipsum dolor sit amet?</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere recusandae harum architecto provident quidem distinctio, odio sint exercitationem, nisi tempora qui. Aut asperiores voluptatibus repudiandae dolore quae, culpa nostrum?</p>
+        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>Как быстро происходит уборка?</h3>
+        <p>Мы ценим доверие наших клиентов, поэтому всегда соблюдаем установленные сроки. Мощное клининговое оборудование и инновационные чистящие средства позволяют проводить быструю и тщательную уборку. Сотрудники имеют уже отработанные алгоритмы борьбы со многими сложными загрязнениями, что также позволяет экономить время.</p>
+        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>У меня аллергия на уборочные средства, особенно с содержанием хлора. Каким образом будет производиться уборка?</h3>
+        <p>Наши специалисты работают с безопасными чистящими экосредствами, не содержащими хлора и ПАВ. Мы обязательно учитываем все пожелания клиентов и обговариваем с ними перечень используемых препаратов.
+Помимо чистящих средств, мы применяем современное оборудование, позволяющее проводить эффективную уборку без химических препаратов. Например, парогенератор очищает поверхности под действием мощного потока горячего пара. Такая обработка не только возвращает поверхностям первоначальный внешний вид, но и уничтожает пылевых клещей и другие микроорганизмы.</p>
+        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>Могу ли я оставить квартиру на время уборки?</h3>
+        <p>Вы можете доверить жилье профессионалам и заняться своими делами, не опасаясь за качество услуг и сохранность вещей. Мы очень ответственно подходим к кадровым вопросам, поэтому все наши сотрудники имеют положительные рекомендации и большой опыт использования современного клинингового оборудования.
+Все необходимые вопросы, касающиеся тонкостей работы с деликатными поверхностями, антиквариатом, элитными изделиями можно обсудить по приезду специалистов. По факту завершения уборки мы свяжемся с Вами по телефону. Вернувшись, Вы сможете убедиться в безупречной чистоте помещений и мебели.</p>
+        <img src="<?php echo home_url(''); ?>/wp-content/uploads/2018/09/question.png" alt="?"><h3>Кто ко мне придет убираться?</h3>
+        <p>У нас работают только профессионалы. Мы ведем жесткий отбор клинеров, который состоит из нескольких этапов. Когда кандидатура клинера согласована и его биография проверена мы проводим тренинг. Даже опытный клинер нуждается в обучении. Мы расширяем кругозор клинеров. Рассказываем им про новые экологически чистые моющие средства. Проводим тренинги по скоростной глажке или химчистке мебели. Компания CleanUp не дает клинерам стоять на месте. Новые технологии повышают эффективность уборки и помогают дольше сохранять чистоту в квартире.</p>
         
     </div>
 </div>
@@ -106,12 +107,13 @@
 
 <!-- Перезвонить вам -->
 
-<div class="container-fluid contacts">
+<!-- <div class="container-fluid contacts">
     <div class="container">
         <h2>Остались вопросы? Напишите нам!</h2>
     <?php echo do_shortcode('[contact-form-7 id="42" title="Контактная форма 1"]'); ?>
     </div>
 </div>
+-->
 
 
 <!-- Содержимое страницы -->

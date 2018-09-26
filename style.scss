@@ -25,7 +25,8 @@ h5 {
 
 }
 
-p {
+p,
+li {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -349,7 +350,7 @@ a {
         img {
             display: inline;
             margin-right: 20px;
-            margin-top: -5px;
+            margin: -6px 10px 10px 0;
         }
 
         h2 {
@@ -369,6 +370,7 @@ a {
 
         p {
             font-size: 20px;
+            margin: 20px 0;
 
             @media (max-width: $breakpoint-sm) {
                 font-size: 18px;
@@ -519,6 +521,18 @@ a {
 
     h2 {
         color: $blue;
+    }
+}
+.callme-calc{
+    background: $blue;
+    h2{
+        color: white !important;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        a{
+            color: white;
+        }
     }
 }
 

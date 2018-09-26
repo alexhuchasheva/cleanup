@@ -18,7 +18,8 @@ h5 a {
   font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p,
+li {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -402,7 +403,7 @@ a {
 .faq .text img {
   display: inline;
   margin-right: 20px;
-  margin-top: -5px;
+  margin: -6px 10px 10px 0;
 }
 
 .faq .text h2 {
@@ -424,6 +425,7 @@ a {
 
 .faq .text p {
   font-size: 20px;
+  margin: 20px 0;
 }
 
 @media (max-width: 576px) {
@@ -571,6 +573,21 @@ a {
 
 .page-content h2 {
   color: #0f93ff;
+}
+
+.callme-calc {
+  background: #0f93ff;
+}
+
+.callme-calc h2 {
+  color: white !important;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.callme-calc h2 a {
+  color: white;
 }
 
 .table-features {

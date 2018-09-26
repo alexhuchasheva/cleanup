@@ -73,6 +73,9 @@
                         <div class="text-muted">
                             Итого: {{ total }} руб.
                         </div>
+                        <div id="contacts" class="callme-calc">
+                                <h2>Заказать уборку: <br> <a href="tel:88129885591"> 8 (812) 988-55-91</a></h2>
+                        </div>
                     </div>
                 </div>
             </div>
